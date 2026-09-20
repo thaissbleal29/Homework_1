@@ -8,7 +8,6 @@ from google.colab import files
 #lendo arquivo e definindo separador ; do dataset
 df = pd.read_csv('wine+quality/winequality-white.csv', sep=';')
 
-
 coluna_classe = "quality"  
 
 #colunas com valor numerico diferenciadas da de classe
