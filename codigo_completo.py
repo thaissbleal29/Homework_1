@@ -178,6 +178,40 @@ def analise_bivariada(df: pd.DataFrame, x: pd.DataFrame) -> None:
     )
     plt.close(grade.fig)
 
+    # === Pares representativos para inclusão no artigo ===
+    # A matriz completa é mantida como resultado complementar, enquanto esta
+    # figura compacta apresenta as três relações de maior interesse.
+    pares_representativos = [
+        ("residual sugar", "density"),
+        ("alcohol", "density"),
+        ("free sulfur dioxide", "total sulfur dioxide"),
+    ]
+
+    fig, axes = plt.subplots(1, 3, figsize=(15, 4))
+
+    for ax, (preditor_x, preditor_y) in zip(axes, pares_representativos):
+        sns.scatterplot(
+            data=df,
+            x=preditor_x,
+            y=preditor_y,
+            hue=COLUNA_CLASSE,
+            palette="Set1",
+            alpha=0.5,
+            s=15,
+            legend=False,
+            ax=ax,
+        )
+        rho = correlacao.loc[preditor_x, preditor_y]
+        ax.set_title(rf"$\rho = {rho:.3f}$")
+
+    fig.tight_layout()
+    fig.savefig(
+        pasta / "pares_representativos.png",
+        dpi=300,
+        bbox_inches="tight",
+    )
+    plt.close(fig)
+
 
 def calcular_pca(x: pd.DataFrame, n_componentes: int = 2):
     """Calcula manualmente o PCA a partir da matriz de covariância."""
