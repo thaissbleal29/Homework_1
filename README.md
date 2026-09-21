@@ -44,4 +44,4 @@ Preencher antes da entrega:
 
 ## Uso de inteligência artificial
 
-Foi utilizada uma ferramenta de IA como apoio à organização e revisão do projeto. Conforme o enunciado, os prompts e as respostas utilizados devem ser incluídos em um apêndice do relatório ou em arquivo separado no repositório.
+A IA foi utilizada durante o projeto a fim de facilitar a organização do documento e para formatação correta do overleaf, mostrando-se extremamente útil para o preenchimento de tabelas com os dados apurados pelo código e para ajudar a manter o formato IEEE.
