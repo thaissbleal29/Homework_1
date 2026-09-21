@@ -38,9 +38,9 @@ Preencher antes da entrega:
 
 | Autor | Contribuição |
 |---|---|
-| André | code.py, implementação do PCA, seção métodos |
-| Lorena | code2.py, análise estatística monovariada, geração de gráficos, seção introdução e resultados monovariados. |
-| Thaís | code3.py e code4.py, análise bivariada, seção resultados bivariados, multivariados e conclusão |
+| André |  implementação do PCA, seção métodos |
+| Lorena | análise estatística monovariada, geração de gráficos, seção introdução e resultados monovariados. |
+| Thaís |  análise bivariada, seção resultados bivariados, multivariados e conclusão |
 
 ## Uso de inteligência artificial
 
