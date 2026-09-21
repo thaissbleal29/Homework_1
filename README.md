@@ -26,11 +26,7 @@ O arquivo `codigo_completo.py` executa, em sequência, os quatro scripts da aná
 
 ## Arquivos principais
 
-- `code.py`: exploração inicial, correlação e PCA;
-- `code2.py`: análise univariada;
-- `code3.py`: análise bivariada;
-- `code4.py`: análise multivariada por PCA;
-- `codigo_completo.py`: execução conjunta dos quatro scripts.
+- `codigo_completo.py`: execução geral.
 
 ## Contribuições dos autores
 
